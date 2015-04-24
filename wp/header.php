@@ -3,11 +3,12 @@
 <head>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<meta charset="utf-8" />
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/css-reset.css" />
-	<link rel="stylesheet" type="text/css" href="css/styles.css" />
-	<script src="js/jquery-1.11.2.min.js"></script>
-	<script src="js/script.js"></script>
+	<title><?php if (is_front_page () ) echo 'Тренажер Долинова "Похудей"'; else wp_title('', true, 'right'); ?></title>
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/css-reset.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/styles.css" />
+	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.11.2.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
+<?php wp_head(); ?>
 </head>
 <body>
 <header>
@@ -72,27 +73,3 @@
 			</div>
 		</div>
 		<div class="content">
-		
-		</div>
-	</div>
-</div>
-<footer>
-	<div class="inner">
-		<div class="footer-left">
-			<a href="#">Где купить тренажер?</a><br>
-			<a href="#">Оптовикам</a><br>
-			&copy; 2015 &laquo;trenazher-dolinova-pohudey.ru&raquo; Все права защищены.
-		</div>
-		<div class="footer-right">
-			<div class="po-voprosam">По вопросам<br>сотрудничества:</div>
-			<div class="phones">
-				8 (495) 374-71-86 (Мск)<br>
-				8 (812) 643-20-47 (СПб)<br>
-				8 (800) 500-51-86 (РФ)<br>
-			</div>
-			<div class="strelka"></div>
-		</div>
-	</div>
-</footer>
-</body>
-</html>
