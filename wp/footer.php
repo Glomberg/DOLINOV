@@ -4,9 +4,9 @@
 <footer>
 	<div class="inner">
 		<div class="footer-left">
-			<a href="#">Где купить тренажер?</a><br>
-			<a href="#">Оптовикам</a><br>
-			&copy; 2015 &laquo;trenazher-dolinova-pohudey.ru&raquo; Все права защищены.
+			<a href="http://trenager-dolinova-pohudey.ru/где-купить/">Где купить тренажер?</a><br>
+			<a href="http://trenager-dolinova-pohudey.ru/оптовикам/">Оптовикам</a><br>
+			&copy; 2015 &laquo;TRENAGER-DOLINOVA-POHUDEY.RU&raquo; Все права защищены.
 		</div>
 		<div class="footer-right">
 			<div class="po-voprosam">По вопросам<br>сотрудничества:</div>

@@ -14,6 +14,11 @@ body {
 	width: 1010px;
 	margin: 0 auto;	
 }
+.clear {
+	width: 100%;
+	height: 0;
+	clear: both;
+}
 /***************
 	HEADER
 ***************/
@@ -123,10 +128,10 @@ nav {
 	nav ul li:last-child a {
 		padding-left: 30px;
 	}
-	nav ul li:hover {
+	nav ul li:hover, nav ul li.active{
 		background-color: #FF00A2;
 	}
-	nav ul li:hover a {
+	nav ul li:hover a, nav ul li.active a {
 		color: #FFFFFF;
 	}
 /***************
@@ -279,8 +284,422 @@ nav {
 				display: none;
 			}
 .content {
+	padding-top: 40px;
 	min-height: 100px;
 	background-color: #FFFFFF;
+	font-family: "Calibri", sans-serif;
+	color: #000000;
+	font-size: 18px;
+	line-height: 22px;
+}
+	.content article {
+		min-height: 210px;
+		position: relative;
+		margin-bottom: 25px;
+		padding-bottom: 50px;
+	}
+	.content .grey-line {
+		height: 2px;
+		width: 930px;
+		margin: 0 auto;
+		background: url(../images/grey-line-bg.png) repeat-x 0 0;
+		margin-bottom: 25px;
+	}
+	.content h2, .content h2 a {
+		font-size: 32px;
+		color: #FF00A2;
+		text-decoration: none;
+		font-weight: normal;
+		margin-bottom: 20px;
+		font-family: 'Times New Roman', serif;
+	}
+	.content section figure {
+		position: absolute;
+		top: 50px;
+		left: 0;
+		width: 210px;
+		height: 140px;
+	}
+	.content section p {
+		padding-left: 220px;
+	}
+	.content section.single p {
+		padding-left: 0px;
+	}
+	.content section .read-more {
+		display: block;
+		position: absolute;
+		right: 40px;
+		bottom: 20px;
+		width: 110px;
+		height: 30px;
+		color: #FFFFFF;
+		text-decoration: none;
+		text-align: center;
+		line-height: 30px;
+		vertical-align: middle;
+		font-size: 16px;
+		font-family: 'Times New Roman', serif;
+		text-transform: uppercase;
+		background-color: #FF00A2;
+	}
+		.content section .read-more:hover {
+			opacity: 0.75;
+		}
+.pagination span {
+	text-transform: uppercase;
+	font-family: 'Times New Roman', serif;
+}
+.pagination ul {
+	padding-left: 5px;
+}
+.pagination ul li {
+	margin-right: 5px;
+}
+.pagination ul, .pagination ul li {
+	display: inline-block;
+}
+.pagination ul a {
+	display: block;
+	width: 27px;
+	height: 27px;
+	text-decoration: none;
+	line-height: 27px;
+	vertical-align: middle;
+	text-align: center;
+	color: #A2A2A2;
+	background: #000000;
+	border-radius: 2px;
+}
+.pagination ul a:hover {
+	color: #FFFFFF;
+	opacity: 0.75;
+}
+.pagination ul a.active {
+	color: #FFFFFF;
+}
+/***************
+	ОБРАТНЫЙ ЗВОНОК
+***************/
+#callback {
+	padding-top: 20px;
+}
+#callback label {
+	display: inline-block;
+	width: 250px;
+	margin-right: 30px;
+	text-align: right;
+	font-family: 'Times New Roman', serif;
+	font-size: 22px;
+	vertical-align: top;
+	padding-top: 8px;
+}
+#callback input, #callback textarea {
+	width: 580px;
+	height: 40px;
+	border-radius: 4px;
+	border: 2px solid #000000;
+	margin-bottom: 10px;
+	font-size: 22px;
+	transition: border-color 0.25s;
+}
+#callback textarea {
+	height: 145px;
+	padding-top: 8px;
+	resize: none;
+	margin-bottom: 30px;
+}
+	#callback input[type=text]:focus,
+	#callback textarea:focus {
+		border-color: #6C606C;
+	}
+#callback a {
+	display: block;
+	width: 200px;
+	height: 55px;
+	background: #FF00A2;
+	line-height: 55px;
+	text-align: center;
+	vertical-align: middle;
+	color: #FFFFFF;
+	font-family: 'Times New Roman', serif;
+	font-size: 22px;
+	margin-left: 665px;
+	text-decoration: none;
+	border-radius: 4px;
+}
+#callback a:hover {
+	opacity: 0.75;
+}
+/***************
+	ЗАКАЗ
+***************/
+#zakaz table *{
+	color: #000000;
+	font-size: 20px;
+}
+#zakaz table{
+	margin-bottom: 25px;
+}
+#zakaz table td {
+	vertical-align: middle;
+}
+#zakaz table input,
+#zakaz table img,
+#zakaz table span {
+	display: inline-block;
+	vertical-align: middle;
+}
+#zakaz table span {
+	line-height: 26px;
+}
+#zakaz table img {
+	height: 100px;
+}
+#zakaz table td {
+	padding-top: 20px;
+}
+#zakaz table th {
+	text-align: left;
+	padding-top: 20px;
+}
+#zakaz table .zakaz-summa {
+	color: #FC009A;
+	font-size: 32px;
+	font-weight: bold;
+}
+#zakaz table .zakaz-value {
+	width: 82px;
+	height: 25px;
+	border: 1px solid #000000;
+	text-align: right;
+}
+#zakaz table input[type=checkbox], #zakaz table input[type=radio] {
+	display: none;
+}
+#zakaz table .complex {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url('../images/unchecked.png') no-repeat 0 0;
+}
+#zakaz table input[type=checkbox]:checked + .complex {
+	background: url('../images/checked.png') no-repeat 0 0;
+}
+#zakaz .hr {
+	background-color: #000000;
+	height: 2px;
+	width: 590px;
+	margin-bottom: 20px;
+}
+#zakaz .bonus {
+	color: #000000;
+	font-size: 18px;
+	height: 26px;
+}
+#zakaz .zakaz-form {
+	height: 42px;
+	width: 590px;
+	border: 2px solid #000000;
+	border-radius: 4px;
+	margin-bottom: 25px;
+	padding-left: 20px;
+	line-height: 42px;
+	vertical-align: middle;
+	color: #000000;
+	font-size: 0;
+}
+#zakaz .zakaz-form > label {
+	font-size: 18px;
+	padding-right: 6px;
+	height: 38px;
+	line-height: 38px;
+	vertical-align: middle;
+	display: inline-block;
+}
+#zakaz .zakaz-form > input {
+	width: 460px;
+	font-size: 18px;
+	height: 32px;
+	line-height: 32px;
+	vertical-align: middle;
+	box-shadow: none;
+	border: none;
+	outline: none;
+}
+#zakaz .options {
+	padding-left: 25px;
+	color: #000000;
+	font-size: 18px;
+	height: 26px;
+	background: url('../images/checked.png') no-repeat 0 0;
+}
+#zakaz input[type=radio] {
+	display: none;
+}
+#zakaz .sposob-oplaty {
+	display: inline-block;
+	padding-left: 25px;
+	padding-right: 25px;
+	color: #000000;
+	font-size: 18px;
+	line-height: 26px;
+	margin-bottom: 35px;
+	background: url('../images/unchecked.png') no-repeat 0 3px;
+}
+#zakaz input[type=radio]:checked + .sposob-oplaty {
+	background: url('../images/checked.png') no-repeat 0 3px;
+}
+#zakaz #zakaz-submit {
+	display: block;
+	height: 55px;
+	width: 200px;
+	text-align: center;
+	line-height: 55px;
+	vertical-align: middle;
+	color: #FFFFFF;
+	background: #FC009A;
+	text-decoration: none;
+	border-radius: 4px;
+	font-size: 18px;
+}
+#zakaz #zakaz-submit:hover {
+	opacity: 0.75;
+}
+#zakaz .zakaz-result {
+	position: absolute;
+	left: 278px;
+	bottom: 16px;
+	height: 75px;
+	border: 2px solid green;
+	border-radius: 4px;
+	width: 360px;
+	color: green;
+	padding: 5px;
+	text-align: center;
+	font-size: 20px;
+	display: none;
+}
+#zakaz li {
+	list-style: circle;
+}
+/***************
+	COMMENTS
+***************/
+#comments {
+	position: relative;
+	min-height: 370px;
+}
+.commentlist {
+	width: 1010px;
+}
+#comments .comment-meta,
+#comments .reply,
+#comments a.next,
+#comments a.prev,
+#comments .comment-notes
+ {
+	display: none;
+}
+.commentlist .comment p {
+	background: #FFFFFF;
+	padding: 10px;
+	display: inline-block;
+	width: 780px;
+	margin-bottom: 25px;
+	color: #000000;
+	font-size: 18px;
+	line-height: 22px;
+}
+.commentlist .comment .comment-author {
+	height: 46px;
+	font-weight: bold;
+	padding-top: 12px;
+	padding-left: 50px;
+	font-size: 24px;
+	white-space:  nowrap;
+	overflow: hidden;
+	border-radius: 8px 8px 0 0;
+	margin-bottom: 5px;
+	color: #FC009A;
+}
+#respond {
+	position: absolute;
+	width: 230px;
+	top: 0;
+	right: 0;
+	color: #18749D;
+	border-bottom: 2px solid #EAEAEA;
+	box-shadow: 0 5px 5px #EAEAEA;
+}
+#respond h3 {
+	display: block;
+	height: 55px;
+	background: url('../images/respond-top-bg.png') no-repeat 0 0;
+	color: #FFFFFF;
+	line-height: 55px;
+	vertical-align: middle;
+	text-align: center;
+}
+#commentform {
+	background: #FFFFFF;
+	min-height: 280px;
+	padding: 20px;
+}
+	#commentform label,
+	#commentform input,
+	#commentform textarea {
+		display: block;
+		padding-left: 4px;
+		transition: border-color 0.25s;
+	}
+	#commentform label {
+		padding-left: 10px;
+		margin-bottom: 6px;
+	}
+	#commentform input[type=text], #commentform textarea {
+		height: 25px;
+		width: 190px;
+		border: 2px solid #EAEAEA;
+		margin-bottom: 10px;
+	}
+	#commentform textarea {
+		padding-top: 2px;
+		height: 80px;
+		resize: none;
+		margin-bottom: 20px;
+	}
+	#commentform #submit {
+		width: 110px;
+		height: 30px;
+		color: #FFFFFF;
+		background-color: #FF02A3;
+		font-size: 16px;
+		cursor: pointer;
+		margin-left: 80px;
+		transition: opacity 0.25s;
+	}
+	#commentform #submit:hover {
+		opacity: 0.75;
+	}
+#comments .page-numbers {
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+	text-decoration: none;
+	line-height: 27px;
+	vertical-align: middle;
+	text-align: center;
+	color: #A2A2A2;
+	background: #000000;
+	border-radius: 2px;
+}
+#comments .page-numbers:hover {
+	color: #FFFFFF;
+	opacity: 0.75;
+}
+#comments .current {
+	color: #FFFFFF;
 }
 /***************
 	FOOTER
@@ -294,12 +713,14 @@ footer {
 	float: left;
 	padding-top: 35px;
 	color: #FFFFFF;
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 16px;
+	line-height: 26px;
 }
 	.footer-left a {
 		text-decoration: none;
 		color: #FF00A2;
+		font-size: 20px;
+		line-height: 24px;
 	}
 .footer-right {
 	width: 460px;

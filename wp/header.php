@@ -18,19 +18,19 @@
 			<a href="#"></a>
 		</div>
 		<div class="callback">
-			<a href="#">ОБРАТНЫЙ ЗВОНОК</a>
+			<a href="http://trenager-dolinova-pohudey.ru/обратный-звонок/">ОБРАТНЫЙ ЗВОНОК</a>
 		</div>
 		<div class="phones">МОСКВА<br>8(495)374-71-86</div>
 		<div class="phones">САНКТ-ПЕТЕРБУРГ<br>8(812)643-20-47</div>
 		<div class="phones" style="border-right: none;">РОССИЯ<br>8(800)500-51-86</div>
 		<nav>
 			<ul>
-				<li><a href="#">Статьи</a></li><div class="border"></div>
-				<li><a href="#">Тренажер Долинова &laquo;Похудей&raquo;</a></li><div class="border"></div>
-				<li><a href="#">Упражнения</a></li><div class="border"></div>
-				<li><a href="#">Вопросы</a></li><div class="border"></div>
-				<li><a href="#">Отзывы</a></li><div class="border"></div>
-				<li><a href="#">Оформить заказ</a></li>
+				<li class="menu1"><a href="/">Статьи</a></li><div class="border"></div>
+				<li class="menu2"><a href="http://trenager-dolinova-pohudey.ru/меню-тренажер/">Тренажер Долинова &laquo;Похудей&raquo;</a></li><div class="border"></div>
+				<li class="menu3"><a href="http://trenager-dolinova-pohudey.ru/меню-упражнения/">Упражнения</a></li><div class="border"></div>
+				<li class="menu4"><a href="http://trenager-dolinova-pohudey.ru/меню-вопросы/">Вопросы</a></li><div class="border"></div>
+				<li class="menu5"><a href="http://trenager-dolinova-pohudey.ru/меню-отзывы/">Отзывы</a></li><div class="border"></div>
+				<li class="menu6"><a href="http://trenager-dolinova-pohudey.ru/меню-оформить-заказ/">Оформить заказ</a></li>
 			</ul>
 		</nav>
 	</div>
